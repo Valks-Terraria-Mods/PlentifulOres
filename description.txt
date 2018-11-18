@@ -1,0 +1,7 @@
+Ore spawns are much more frequent. Ores that are effected are listed below.
+
+Iron / Lead
+Gold / Platinum
+Diamond / Ruby / Sapphire / Topaz / Emerald
+
+(Hardmode ores are hard coded so it would be very hard to change those)
