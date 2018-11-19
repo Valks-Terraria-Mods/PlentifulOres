@@ -1,5 +1,5 @@
 author = valkyrienyanko
-version = 1.0
+version = 1.2.1
 displayName = Plentiful Ores
 
 homepage = https://discord.gg/thMupbv
