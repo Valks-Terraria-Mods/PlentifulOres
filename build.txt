@@ -1,5 +1,5 @@
 author = valkyrienyanko
-version = 1.4
+version = 2.0.3
 displayName = Plentiful Ores
 
-homepage = https://discord.gg/thMupbv
+homepage = https://github.com/Valks-Terraria-Mods/PlentifulOres
