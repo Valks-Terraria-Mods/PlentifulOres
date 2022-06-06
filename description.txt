@@ -1,5 +1,17 @@
 Never miss that particular ore you're searching for ever again. Ore spawns are roughly 2.5x more frequent. Ores that are effected are listed below. The mod is only triggered on world creation.
 
+This mod does not change hardmode ores.
+
+Only copper spawns in a copper world, likewise tin only spawns in a world with in.
+
+Prehardmode Ores
+
+Copper / Tin
+Silver / Tungsten
 Iron / Lead
 Gold / Platinum
+Crimtane / Demonite
+
+Gems
+
 Diamond / Ruby / Sapphire / Topaz / Emerald
