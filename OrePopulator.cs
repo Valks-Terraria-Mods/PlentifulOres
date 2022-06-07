@@ -22,10 +22,10 @@ public class OrePopulator : ModSystem
         var ores = new List<OreInfo>
         {
             { new OreInfo(WorldGen.copperBar > 0 ? TileID.Copper : TileID.Tin, PlentifulOres.Config.Copper) },
-            { new OreInfo(WorldGen.silverBar > 0 ? TileID.Silver : TileID.Tungsten, 10) },
-            { new OreInfo(WorldGen.ironBar > 0 ? TileID.Iron : TileID.Lead, 15) },
-            { new OreInfo(WorldGen.goldBar > 0 ? TileID.Gold : TileID.Platinum, 20) },
-            { new OreInfo(WorldGen.crimson ? TileID.Crimtane : TileID.Demonite, 15) }
+            { new OreInfo(WorldGen.silverBar > 0 ? TileID.Silver : TileID.Tungsten, PlentifulOres.Config.Silver ) },
+            { new OreInfo(WorldGen.ironBar > 0 ? TileID.Iron : TileID.Lead, PlentifulOres.Config.Iron) },
+            { new OreInfo(WorldGen.goldBar > 0 ? TileID.Gold : TileID.Platinum, PlentifulOres.Config.Gold) },
+            { new OreInfo(WorldGen.crimson ? TileID.Crimtane : TileID.Demonite, PlentifulOres.Config.Crimtane) }
         };
 
         foreach (var ore in ores)
@@ -40,11 +40,11 @@ public class OrePopulator : ModSystem
         
         var gems = new List<OreInfo>
         {
-            { new OreInfo(TileID.Diamond, 3) },
-            { new OreInfo(TileID.Ruby, 3) },
-            { new OreInfo(TileID.Emerald, 3) },
-            { new OreInfo(TileID.Sapphire, 3) },
-            { new OreInfo(TileID.Topaz, 3) }
+            { new OreInfo(TileID.Diamond, PlentifulOres.Config.Diamond) },
+            { new OreInfo(TileID.Ruby, PlentifulOres.Config.Ruby) },
+            { new OreInfo(TileID.Emerald, PlentifulOres.Config.Emerald) },
+            { new OreInfo(TileID.Sapphire, PlentifulOres.Config.Sapphire) },
+            { new OreInfo(TileID.Topaz, PlentifulOres.Config.Topaz) }
         };
 
         foreach (var gem in gems)
