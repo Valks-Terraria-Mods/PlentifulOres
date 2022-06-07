@@ -18,16 +18,23 @@ Diamond / Ruby / Sapphire / Topaz / Emerald
 
 Added config
 
-Config location: C:\Users\USER\Documents\My Games\Terraria\tModLoader\ModConfigs
+Config location: C:\Users\USER\Documents\My Games\Terraria\tModLoader\ModConfigs\PlentifulOres_Config.json
 
 Config will be empty unless default values are changed. Paste the following JSON in config and edit it before loading a world.
 
+[code]
 {
   "Copper": 4,
   "Silver": 11,
   "Iron": 16,
   "Gold": 21,
-  "Crimtane": 17
+  "Crimtane": 17,
+  "Diamond": 4,
+  "Ruby": 4,
+  "Emerald": 4,
+  "Sapphire": 4,
+  "Topaz": 4
 }
+[/code]
 
 Source: https://github.com/Valks-Terraria-Mods/PlentifulOres
