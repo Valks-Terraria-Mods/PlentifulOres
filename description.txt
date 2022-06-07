@@ -2,7 +2,7 @@ Never miss that particular ore you're searching for ever again. Ore spawns are r
 
 This mod does not change hardmode ores.
 
-Only copper spawns in a copper world, likewise tin only spawns in a world with in.
+Only copper spawns in a copper world, likewise tin only spawns in a world with tin.
 
 Prehardmode Ores
 

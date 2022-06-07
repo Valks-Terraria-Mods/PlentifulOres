@@ -21,7 +21,7 @@ public class OrePopulator : ModSystem
 
         var ores = new List<OreInfo>
         {
-            { new OreInfo(WorldGen.copperBar > 0 ? TileID.Copper : TileID.Tin, 3) },
+            { new OreInfo(WorldGen.copperBar > 0 ? TileID.Copper : TileID.Tin, PlentifulOres.Config.Copper) },
             { new OreInfo(WorldGen.silverBar > 0 ? TileID.Silver : TileID.Tungsten, 10) },
             { new OreInfo(WorldGen.ironBar > 0 ? TileID.Iron : TileID.Lead, 15) },
             { new OreInfo(WorldGen.goldBar > 0 ? TileID.Gold : TileID.Platinum, 20) },

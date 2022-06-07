@@ -10,5 +10,10 @@ namespace PlentifulOres;
 
 public class PlentifulOres : Mod
 {
+    public static Config Config { get; set; }
 
+    public PlentifulOres() 
+    {
+        
+    }
 }

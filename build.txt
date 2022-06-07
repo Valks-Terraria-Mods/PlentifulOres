@@ -1,4 +1,4 @@
 author = valkyrienyanko
-version = 2.1.1
+version = 2.1.2
 displayName = Plentiful Ores
 homepage = https://github.com/Valks-Terraria-Mods/PlentifulOres
