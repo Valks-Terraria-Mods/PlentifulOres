@@ -15,3 +15,5 @@ Crimtane / Demonite
 Gems
 
 Diamond / Ruby / Sapphire / Topaz / Emerald
+
+Source: https://github.com/Valks-Terraria-Mods/PlentifulOres
