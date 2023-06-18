@@ -1,3 +1,5 @@
+New Update: Added missing Amethyst ore :P
+
 Never miss that particular ore you're searching for ever again. Ore spawns are roughly 2.5x more frequent. Ores that are effected are listed below. The mod is only triggered on world creation.
 
 This mod does not change hardmode ores.
@@ -14,7 +16,7 @@ Crimtane / Demonite
 
 Gems
 
-Diamond / Ruby / Sapphire / Topaz / Emerald
+Diamond / Ruby / Sapphire / Topaz / Emerald / Amethyst
 
 Added config
 
@@ -33,6 +35,7 @@ Config will be empty unless default values are changed. Paste the following JSON
   "Ruby": 4,
   "Emerald": 4,
   "Sapphire": 4,
+  "Amethyst" : 4,
   "Topaz": 4
 }
 [/code]

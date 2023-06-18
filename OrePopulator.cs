@@ -44,6 +44,7 @@ public class OrePopulator : ModSystem
             { new OreInfo(TileID.Ruby, PlentifulOres.Config.Ruby) },
             { new OreInfo(TileID.Emerald, PlentifulOres.Config.Emerald) },
             { new OreInfo(TileID.Sapphire, PlentifulOres.Config.Sapphire) },
+            { new OreInfo(TileID.Amethyst, PlentifulOres.Config.Amethyst) },
             { new OreInfo(TileID.Topaz, PlentifulOres.Config.Topaz) }
         };
 

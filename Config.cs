@@ -80,6 +80,13 @@ public class Config : ModConfig
     [Range(1, 100)]
     public int Topaz;
 
+    [Header("Gem Amounts")]
+    [Label("Amethyst")]
+    [DefaultValue(3)]
+    [BackgroundColor(0, 0, 0, 100)]
+    [Range(1, 100)]
+    public int Amethyst;
+
     public override void OnLoaded()
     {
         PlentifulOres.Config = this;
