@@ -2,7 +2,7 @@
 
 public class OrePopulator : ModSystem
 {
-    public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
+    public override void ModifyWorldGenTasks(List<GenPass> tasks, ref double totalWeight)
     {
         InsertGenerator(tasks, "Shinies", GenerateOres);
         InsertGenerator(tasks, "Gems", GenerateGems);
@@ -21,10 +21,10 @@ public class OrePopulator : ModSystem
 
         var ores = new List<OreInfo>
         {
-            { new OreInfo(WorldGen.copperBar > 0 ? TileID.Copper : TileID.Tin, PlentifulOres.Config.Copper) },
-            { new OreInfo(WorldGen.silverBar > 0 ? TileID.Silver : TileID.Tungsten, PlentifulOres.Config.Silver ) },
-            { new OreInfo(WorldGen.ironBar > 0 ? TileID.Iron : TileID.Lead, PlentifulOres.Config.Iron) },
-            { new OreInfo(WorldGen.goldBar > 0 ? TileID.Gold : TileID.Platinum, PlentifulOres.Config.Gold) },
+            { new OreInfo(GenVars.copperBar > 0 ? TileID.Copper : TileID.Tin, PlentifulOres.Config.Copper) },
+            { new OreInfo(GenVars.silverBar > 0 ? TileID.Silver : TileID.Tungsten, PlentifulOres.Config.Silver ) },
+            { new OreInfo(GenVars.ironBar > 0 ? TileID.Iron : TileID.Lead, PlentifulOres.Config.Iron) },
+            { new OreInfo(GenVars.goldBar > 0 ? TileID.Gold : TileID.Platinum, PlentifulOres.Config.Gold) },
             { new OreInfo(WorldGen.crimson ? TileID.Crimtane : TileID.Demonite, PlentifulOres.Config.Crimtane) }
         };
 
@@ -57,7 +57,7 @@ public class OrePopulator : ModSystem
     private static void GenerateTile(ushort tile) 
     {
         int x = WorldGen.genRand.Next(0, Main.maxTilesX);
-        int y = WorldGen.genRand.Next((int)WorldGen.rockLayerLow, Main.maxTilesY);
+        int y = WorldGen.genRand.Next((int)GenVars.rockLayerLow, Main.maxTilesY);
 
         WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 5), WorldGen.genRand.Next(3, 6), tile, false, 0f, 0f, false, true);
     }

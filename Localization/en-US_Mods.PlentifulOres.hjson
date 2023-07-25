@@ -1,0 +1,60 @@
+Configs: {
+	Config: {
+		DisplayName: Config
+
+		Copper: {
+			Label: Copper
+			Tooltip: ""
+		}
+
+		Silver: {
+			Label: Silver
+			Tooltip: ""
+		}
+
+		Iron: {
+			Label: Iron
+			Tooltip: ""
+		}
+
+		Gold: {
+			Label: Gold
+			Tooltip: ""
+		}
+
+		Crimtane: {
+			Label: Crimtane
+			Tooltip: ""
+		}
+
+		Diamond: {
+			Label: Diamond
+			Tooltip: ""
+		}
+
+		Ruby: {
+			Label: Ruby
+			Tooltip: ""
+		}
+
+		Emerald: {
+			Label: Emerald
+			Tooltip: ""
+		}
+
+		Sapphire: {
+			Label: Sapphire
+			Tooltip: ""
+		}
+
+		Topaz: {
+			Label: Topaz
+			Tooltip: ""
+		}
+
+		Amethyst: {
+			Label: Amethyst
+			Tooltip: ""
+		}
+	}
+}
