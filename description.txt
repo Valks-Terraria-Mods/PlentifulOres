@@ -1,17 +1,21 @@
-Never miss that particular ore you're searching for ever again. Ore spawns are roughly 5x more frequent with default settings. Ores that are effected are listed below. The mod is only triggered on world creation. Only copper spawns in a copper world, likewise tin only spawns in a world with tin.
+[h1]Never miss that particular ore you're searching for ever again[/h1]
+Ore spawns are roughly 5x more frequent with default settings. Ores that are effected are listed below. The mod is only triggered on world creation. Only copper spawns in a copper world, likewise tin only spawns in a world with tin.
 
-Prehardmode Ores
+[h1]Effected Ores[/h1]
+All vanilla pre-hardmode ores and gems
 
-Copper / Tin
-Silver / Tungsten
-Iron / Lead
-Gold / Platinum
-Crimtane / Demonite
+[h1]Config Explained[/h1]
+- Near Surface (ores will spawn near surface)
+- Not Only Replace But Add (ores will be placed in empty tiles)
+- No Y Change (have not tested but here for you to experiment)
+- Override (I think this makes it so ores replace existing tiles)
+- Speed X (have not tested but here for you to experiment)
+- Speed Y (have not tested but here for you to experiment)
+- Additional Strength (increases the size of ore clusters)
+- Additional Steps (like strength but different!)
+- All Ore and Gem Bias (changes how much a particular ore or gem spawns)
 
-Gems
-
-Diamond / Ruby / Sapphire / Topaz / Emerald / Amethyst
-
+[h1]Links[/h1]
 Suggestions and Feedback: https://discord.gg/866cg8yfxZ 
 Source Code: https://github.com/Valks-Terraria-Mods/PlentifulOres
 My Other Mods: https://steamcommunity.com/sharedfiles/filedetails/?id=3025618564
