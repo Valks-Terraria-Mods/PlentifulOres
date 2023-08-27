@@ -22,11 +22,11 @@ public class Config : ModConfig
 
     [DefaultValue(0)]
     [Range(0, 10000)]
-    public double SpeedX;
+    public float SpeedX;
 
     [DefaultValue(0)]
     [Range(0, 10000)]
-    public double SpeedY;
+    public float SpeedY;
 
     [DefaultValue(0)]
     [Range(0, 30)]
@@ -56,6 +56,18 @@ public class Config : ModConfig
     [DefaultValue(3)]
     [Range(1, 100)]
     public int CrimtaneBias;
+
+    [DefaultValue(15)]
+    [Range(1, 100)]
+    public int CobaltBias;
+
+    [DefaultValue(15)]
+    [Range(1, 100)]
+    public int MythrilBias;
+
+    [DefaultValue(15)]
+    [Range(1, 100)]
+    public int TitaniumBias;
 
     // Gems
     [DefaultValue(3)]

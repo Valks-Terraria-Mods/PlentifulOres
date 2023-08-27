@@ -4,6 +4,8 @@ Ore spawns are roughly 5x more frequent with default settings. Ores that are eff
 [h1]Effected Ores[/h1]
 All vanilla pre-hardmode ores and gems
 
+Killing the Wall of Flesh will now spawn a ton of hardmode ores everywhere. The hardmode ores will always be cobalt, mythril and titanium.
+
 [h1]Config Explained[/h1]
 - Near Surface (ores will spawn near surface)
 - Not Only Replace But Add (ores will be placed in empty tiles)

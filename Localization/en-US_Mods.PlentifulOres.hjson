@@ -126,5 +126,60 @@ Configs: {
 			Label: Amethyst Bias
 			Tooltip: ""
 		}
+
+		Override_OnlyChangeIfYouKnowWhatYouAreDoing: {
+			Tooltip: ""
+			Label: Override_ Only Change If You Know What You Are Doing
+		}
+
+		NoYChange: {
+			Tooltip: ""
+			Label: No Y Change
+		}
+
+		NotOnlyReplaceButAdd: {
+			Tooltip: ""
+			Label: Not Only Replace But Add
+		}
+
+		NearSurface: {
+			Tooltip: ""
+			Label: Near Surface
+		}
+
+		SpeedX: {
+			Label: Speed X
+			Tooltip: ""
+		}
+
+		SpeedY: {
+			Label: Speed Y
+			Tooltip: ""
+		}
+
+		AdditionalStrength: {
+			Label: Additional Strength
+			Tooltip: ""
+		}
+
+		AdditionalSteps: {
+			Label: Additional Steps
+			Tooltip: ""
+		}
+
+		CobaltBias: {
+			Label: Cobalt Bias
+			Tooltip: ""
+		}
+
+		MythrilBias: {
+			Label: Mythril Bias
+			Tooltip: ""
+		}
+
+		TitaniumBias: {
+			Label: Titanium Bias
+			Tooltip: ""
+		}
 	}
 }

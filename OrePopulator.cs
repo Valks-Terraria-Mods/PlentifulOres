@@ -10,12 +10,60 @@ public class OrePopulator : ModSystem
         if (index != -1)
             tasks.Insert(
                 index: index + 1,
-                item: new ExampleOrePass(nameof(PlentifulOres), 
+                item: new PrehardmodeOresPass(nameof(PlentifulOres), 
+                loadWeight: 237.4298f));
+    }
+
+    public override void ModifyHardmodeTasks(List<GenPass> tasks)
+    {
+        int index = tasks.FindIndex(genpass => genpass.Name.Equals("Hardmode Good"));
+        if (index != -1)
+            tasks.Insert(
+                index: index + 1,
+                item: new HardmodeOresPass(nameof(PlentifulOres),
                 loadWeight: 237.4298f));
     }
 }
 
-public class ExampleOrePass : GenPass
+public class HardmodeOresPass : GenPass
+{
+    readonly List<OreInfo> ores = new()
+    {
+        { new OreInfo(
+            tile: TileID.Cobalt,
+            amount: PlentifulOres.Config.CobaltBias) },
+        
+        { new OreInfo(
+            tile: TileID.Mythril,
+            amount: PlentifulOres.Config.MythrilBias) },
+        
+        { new OreInfo(
+            tile: TileID.Titanium,
+            amount: PlentifulOres.Config.TitaniumBias) },
+    };
+
+    public HardmodeOresPass(string name, float loadWeight) :
+        base(name, loadWeight) { }
+
+    protected override void ApplyPass(GenerationProgress progress, GameConfiguration configuration)
+    {
+        int tileCount = (int)(Main.maxTilesX * Main.maxTilesY * 6E-05);
+
+        for (int k = 0; k < tileCount; k++)
+        {
+            GenerateOres();
+        }
+    }
+
+    void GenerateOres()
+    {
+        foreach (var ore in ores)
+            for (int n = 0; n < ore.Amount; n++)
+                Utils.GenerateTile(ore.Tile);
+    }
+}
+
+public class PrehardmodeOresPass : GenPass
 {
     readonly List<OreInfo> ores = new()
     {
@@ -50,12 +98,12 @@ public class ExampleOrePass : GenPass
         { new OreInfo(TileID.Topaz, PlentifulOres.Config.TopazBias) }
     };
 
-    public ExampleOrePass(string name, float loadWeight) : 
+    public PrehardmodeOresPass(string name, float loadWeight) : 
         base(name, loadWeight) { }
 
     protected override void ApplyPass(GenerationProgress progress, GameConfiguration configuration)
     {
-        progress.Message = "Adding EVEN MORE ORES!!!! HAHAHAHA!!";
+        progress.Message = "Adding EVEN MORE ORES!!!!";
 
         int tileCount = (int)(Main.maxTilesX * Main.maxTilesY * 6E-05);
 
@@ -70,39 +118,14 @@ public class ExampleOrePass : GenPass
     {
         foreach (var ore in ores)
             for (int n = 0; n < ore.Amount; n++)
-                GenerateTile(ore.Tile);
+                Utils.GenerateTile(ore.Tile);
     }
 
     void GenerateGems()
     {
         foreach (OreInfo gem in gems)
             for (int n = 0; n < gem.Amount; n++)
-                GenerateTile(gem.Tile);
-    }
-
-    void GenerateTile(ushort id)
-    {
-        Config config = PlentifulOres.Config;
-
-        bool nearSurface = config.NearSurface;
-
-        int x = WorldGen.genRand.Next(0, Main.maxTilesX);
-        int y = WorldGen.genRand.Next(
-            minValue: nearSurface ? (int)GenVars.worldSurfaceLow : (int)GenVars.rockLayerLow, 
-            maxValue: Main.maxTilesY);
-
-        int additionalStr = config.AdditionalStrength;
-        int additionalSteps = config.AdditionalSteps;
-
-        WorldGen.TileRunner(x, y,
-            strength: WorldGen.genRand.Next(10 + additionalStr, 15 + additionalStr),
-            steps: WorldGen.genRand.Next(3 + additionalSteps, 6 + additionalSteps),
-            type: id,
-            addTile: config.NotOnlyReplaceButAdd,
-            speedX: config.SpeedX,
-            speedY: config.SpeedY,
-            noYChange: config.NoYChange,
-            overRide: config.Override_OnlyChangeIfYouKnowWhatYouAreDoing);
+                Utils.GenerateTile(gem.Tile);
     }
 }
 
