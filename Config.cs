@@ -3,67 +3,84 @@ using Terraria.ModLoader.Config;
 
 namespace PlentifulOres;
 
-[BackgroundColor(0, 0, 0, 100)]
+[BackgroundColor(0, 0, 0, 200)]
 public class Config : ModConfig
 {
     public override ConfigScope Mode => ConfigScope.ServerSide;
 
+    [DefaultValue(false)]
+    public bool NearSurface;
+
+    [DefaultValue(false)]
+    public bool NotOnlyReplaceButAdd;
+
+    [DefaultValue(false)]
+    public bool NoYChange;
+
+    [DefaultValue(true)]
+    public bool Override_OnlyChangeIfYouKnowWhatYouAreDoing;
+
+    [DefaultValue(0)]
+    [Range(0, 10000)]
+    public double SpeedX;
+
+    [DefaultValue(0)]
+    [Range(0, 10000)]
+    public double SpeedY;
+
+    [DefaultValue(0)]
+    [Range(0, 30)]
+    public int AdditionalStrength;
+
+    [DefaultValue(0)]
+    [Range(0, 30)]
+    public int AdditionalSteps;
+
     // Ores
     [DefaultValue(3)]
-    [BackgroundColor(0, 0, 0, 100)]
     [Range(1, 100)]
-    public int Copper;
+    public int CopperBias;
 
     [DefaultValue(10)]
-    [BackgroundColor(0, 0, 0, 100)]
     [Range(1, 100)]
-    public int Silver;
+    public int SilverBias;
 
     [DefaultValue(15)]
-    [BackgroundColor(0, 0, 0, 100)]
     [Range(1, 100)]
-    public int Iron;
+    public int IronBias;
 
     [DefaultValue(20)]
-    [BackgroundColor(0, 0, 0, 100)]
     [Range(1, 100)]
-    public int Gold;
+    public int GoldBias;
 
-    [DefaultValue(15)]
-    [BackgroundColor(0, 0, 0, 100)]
+    [DefaultValue(3)]
     [Range(1, 100)]
-    public int Crimtane;
+    public int CrimtaneBias;
 
     // Gems
     [DefaultValue(3)]
-    [BackgroundColor(0, 0, 0, 100)]
     [Range(1, 100)]
-    public int Diamond;
+    public int DiamondBias;
 
     [DefaultValue(3)]
-    [BackgroundColor(0, 0, 0, 100)]
     [Range(1, 100)]
-    public int Ruby;
+    public int RubyBias;
 
     [DefaultValue(3)]
-    [BackgroundColor(0, 0, 0, 100)]
     [Range(1, 100)]
-    public int Emerald;
+    public int EmeraldBias;
 
     [DefaultValue(3)]
-    [BackgroundColor(0, 0, 0, 100)]
     [Range(1, 100)]
-    public int Sapphire;
+    public int SapphireBias;
 
     [DefaultValue(3)]
-    [BackgroundColor(0, 0, 0, 100)]
     [Range(1, 100)]
-    public int Topaz;
+    public int TopazBias;
 
     [DefaultValue(3)]
-    [BackgroundColor(0, 0, 0, 100)]
     [Range(1, 100)]
-    public int Amethyst;
+    public int AmethystBias;
 
     public override void OnLoaded()
     {

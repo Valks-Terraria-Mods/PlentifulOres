@@ -56,5 +56,75 @@ Configs: {
 			Label: Amethyst
 			Tooltip: ""
 		}
+
+		AddOresAndGemsNearSurface: {
+			Label: Add Ores And Gems Near Surface
+			Tooltip: ""
+		}
+
+		AdditionalGlobalOreAndGemStrength: {
+			Label: Additional Global Ore And Gem Strength
+			Tooltip: ""
+		}
+
+		AdditionalGlobalOreAndGemSteps: {
+			Label: Additional Global Ore And Gem Steps
+			Tooltip: ""
+		}
+
+		CopperBias: {
+			Label: Copper Bias
+			Tooltip: ""
+		}
+
+		SilverBias: {
+			Label: Silver Bias
+			Tooltip: ""
+		}
+
+		IronBias: {
+			Label: Iron Bias
+			Tooltip: ""
+		}
+
+		GoldBias: {
+			Label: Gold Bias
+			Tooltip: ""
+		}
+
+		CrimtaneBias: {
+			Label: Crimtane Bias
+			Tooltip: ""
+		}
+
+		DiamondBias: {
+			Label: Diamond Bias
+			Tooltip: ""
+		}
+
+		RubyBias: {
+			Label: Ruby Bias
+			Tooltip: ""
+		}
+
+		EmeraldBias: {
+			Label: Emerald Bias
+			Tooltip: ""
+		}
+
+		SapphireBias: {
+			Label: Sapphire Bias
+			Tooltip: ""
+		}
+
+		TopazBias: {
+			Label: Topaz Bias
+			Tooltip: ""
+		}
+
+		AmethystBias: {
+			Label: Amethyst Bias
+			Tooltip: ""
+		}
 	}
 }

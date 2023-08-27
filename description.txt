@@ -1,12 +1,4 @@
-Updated to 1.4.4
-
-New Update: Added missing Amethyst ore :P
-
-Never miss that particular ore you're searching for ever again. Ore spawns are roughly 2.5x more frequent. Ores that are effected are listed below. The mod is only triggered on world creation.
-
-This mod does not change hardmode ores.
-
-Only copper spawns in a copper world, likewise tin only spawns in a world with tin.
+Never miss that particular ore you're searching for ever again. Ore spawns are roughly 5x more frequent with default settings. Ores that are effected are listed below. The mod is only triggered on world creation. Only copper spawns in a copper world, likewise tin only spawns in a world with tin.
 
 Prehardmode Ores
 
@@ -20,26 +12,6 @@ Gems
 
 Diamond / Ruby / Sapphire / Topaz / Emerald / Amethyst
 
-Added config
-
-Config location: C:\Users\USER\Documents\My Games\Terraria\tModLoader\ModConfigs\PlentifulOres_Config.json
-
-Config will be empty unless default values are changed. Paste the following JSON in config and edit it before loading a world.
-
-[code]
-{
-  "Copper": 4,
-  "Silver": 11,
-  "Iron": 16,
-  "Gold": 21,
-  "Crimtane": 17,
-  "Diamond": 4,
-  "Ruby": 4,
-  "Emerald": 4,
-  "Sapphire": 4,
-  "Amethyst" : 4,
-  "Topaz": 4
-}
-[/code]
-
-Source: https://github.com/Valks-Terraria-Mods/PlentifulOres
+Suggestions and Feedback: https://discord.gg/866cg8yfxZ 
+Source Code: https://github.com/Valks-Terraria-Mods/PlentifulOres
+My Other Mods: https://steamcommunity.com/sharedfiles/filedetails/?id=3025618564

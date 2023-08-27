@@ -2,97 +2,107 @@
 
 public class OrePopulator : ModSystem
 {
-    readonly List<OreInfo> ores = new()
-    {
-        { new OreInfo(
-            tile: GenVars.copperBar > 0 ? TileID.Copper : TileID.Tin, 
-            amount: PlentifulOres.Config.Copper) },
-
-        { new OreInfo(
-            tile: GenVars.silverBar > 0 ? TileID.Silver : TileID.Tungsten, 
-            amount: PlentifulOres.Config.Silver ) },
-
-        { new OreInfo(
-            tile: GenVars.ironBar > 0 ? TileID.Iron : TileID.Lead, 
-            amount: PlentifulOres.Config.Iron) },
-
-        { new OreInfo(
-            tile: GenVars.goldBar > 0 ? TileID.Gold : TileID.Platinum, 
-            amount: PlentifulOres.Config.Gold) },
-
-        { new OreInfo(
-            tile: WorldGen.crimson ? TileID.Crimtane : TileID.Demonite, 
-            amount: PlentifulOres.Config.Crimtane) }
-    };
-
     public override void ModifyWorldGenTasks(
         List<GenPass> tasks, 
         ref double totalWeight)
     {
-        InsertGenerator(tasks, "Shinies", GenerateOres);
-        InsertGenerator(tasks, "Gems", GenerateGems);
-    }
-
-    void InsertGenerator(
-        List<GenPass> tasks, 
-        string name, 
-        WorldGenLegacyMethod method) 
-    {
-        int index = tasks.FindIndex(genpass => genpass.Name.Equals(name));
+        int index = tasks.FindIndex(genpass => genpass.Name.Equals("Shinies"));
         if (index != -1)
             tasks.Insert(
-                index: index + 1, 
-                item: new PassLegacy(nameof(PlentifulOres), method));
+                index: index + 1,
+                item: new ExampleOrePass(nameof(PlentifulOres), 
+                loadWeight: 237.4298f));
     }
+}
 
-    void GenerateOres(
-        GenerationProgress progress, 
-        GameConfiguration configuration)
+public class ExampleOrePass : GenPass
+{
+    readonly List<OreInfo> ores = new()
     {
-        progress.Message = "Adding even more ores";
+        { new OreInfo(
+            tile: GenVars.copperBar > 0 ? TileID.Copper : TileID.Tin,
+            amount: PlentifulOres.Config.CopperBias) },
 
-        foreach (var ore in ores)
-            for (int n = 0; n < ore.Amount; n++)
-                for (int k = 0; k < (int)(Main.maxTilesX * Main.maxTilesY * 6E-05); k++)
-                    GenerateTile(ore.Tile);
-    }
+        { new OreInfo(
+            tile: GenVars.silverBar > 0 ? TileID.Silver : TileID.Tungsten,
+            amount: PlentifulOres.Config.SilverBias ) },
 
-    void GenerateGems(GenerationProgress progress, GameConfiguration configuration)
+        { new OreInfo(
+            tile: GenVars.ironBar > 0 ? TileID.Iron : TileID.Lead,
+            amount: PlentifulOres.Config.IronBias) },
+
+        { new OreInfo(
+            tile: GenVars.goldBar > 0 ? TileID.Gold : TileID.Platinum,
+            amount: PlentifulOres.Config.GoldBias) },
+
+        { new OreInfo(
+            tile: WorldGen.crimson ? TileID.Crimtane : TileID.Demonite,
+            amount: PlentifulOres.Config.CrimtaneBias) }
+    };
+
+    readonly List<OreInfo> gems = new()
     {
-        progress.Message = "Adding even more gems";
+        { new OreInfo(TileID.Diamond, PlentifulOres.Config.DiamondBias) },
+        { new OreInfo(TileID.Ruby, PlentifulOres.Config.RubyBias) },
+        { new OreInfo(TileID.Emerald, PlentifulOres.Config.EmeraldBias) },
+        { new OreInfo(TileID.Sapphire, PlentifulOres.Config.SapphireBias) },
+        { new OreInfo(TileID.Amethyst, PlentifulOres.Config.AmethystBias) },
+        { new OreInfo(TileID.Topaz, PlentifulOres.Config.TopazBias) }
+    };
 
-        List<OreInfo> gems = new()
-        {
-            { new OreInfo(TileID.Diamond, PlentifulOres.Config.Diamond) },
-            { new OreInfo(TileID.Ruby, PlentifulOres.Config.Ruby) },
-            { new OreInfo(TileID.Emerald, PlentifulOres.Config.Emerald) },
-            { new OreInfo(TileID.Sapphire, PlentifulOres.Config.Sapphire) },
-            { new OreInfo(TileID.Amethyst, PlentifulOres.Config.Amethyst) },
-            { new OreInfo(TileID.Topaz, PlentifulOres.Config.Topaz) }
-        };
+    public ExampleOrePass(string name, float loadWeight) : 
+        base(name, loadWeight) { }
+
+    protected override void ApplyPass(GenerationProgress progress, GameConfiguration configuration)
+    {
+        progress.Message = "Adding EVEN MORE ORES!!!! HAHAHAHA!!";
 
         int tileCount = (int)(Main.maxTilesX * Main.maxTilesY * 6E-05);
 
-        foreach (OreInfo gem in gems)
-            for (int n = 0; n < gem.Amount; n++)
-                for (int k = 0; k < tileCount; k++)
-                    GenerateTile(gem.Tile);
+        for (int k = 0; k < tileCount; k++)
+        {
+            GenerateOres();
+            GenerateGems();
+        }
     }
 
-    void GenerateTile(ushort tileId) 
+    void GenerateOres()
     {
-        int x = WorldGen.genRand.Next(0, Main.maxTilesX);
-        int y = WorldGen.genRand.Next((int)GenVars.rockLayerLow, Main.maxTilesY);
+        foreach (var ore in ores)
+            for (int n = 0; n < ore.Amount; n++)
+                GenerateTile(ore.Tile);
+    }
 
-        WorldGen.TileRunner(x, y, 
-            strength: WorldGen.genRand.Next(3, 5), 
-            steps: WorldGen.genRand.Next(3, 6), 
-            type: tileId, 
-            addTile: false, 
-            speedX: 0f, 
-            speedY: 0f, 
-            noYChange: false, 
-            overRide: true);
+    void GenerateGems()
+    {
+        foreach (OreInfo gem in gems)
+            for (int n = 0; n < gem.Amount; n++)
+                GenerateTile(gem.Tile);
+    }
+
+    void GenerateTile(ushort id)
+    {
+        Config config = PlentifulOres.Config;
+
+        bool nearSurface = config.NearSurface;
+
+        int x = WorldGen.genRand.Next(0, Main.maxTilesX);
+        int y = WorldGen.genRand.Next(
+            minValue: nearSurface ? (int)GenVars.worldSurfaceLow : (int)GenVars.rockLayerLow, 
+            maxValue: Main.maxTilesY);
+
+        int additionalStr = config.AdditionalStrength;
+        int additionalSteps = config.AdditionalSteps;
+
+        WorldGen.TileRunner(x, y,
+            strength: WorldGen.genRand.Next(10 + additionalStr, 15 + additionalStr),
+            steps: WorldGen.genRand.Next(3 + additionalSteps, 6 + additionalSteps),
+            type: id,
+            addTile: config.NotOnlyReplaceButAdd,
+            speedX: config.SpeedX,
+            speedY: config.SpeedY,
+            noYChange: config.NoYChange,
+            overRide: config.Override_OnlyChangeIfYouKnowWhatYouAreDoing);
     }
 }
 
