@@ -24,7 +24,7 @@ public class SpawnLunarOre : GlobalNPC
 
             Tile tile = Main.tile[x, y];
 
-            if (tile.HasTile && !TileID.Sets.Ore[tile.TileType])
+            if (tile.HasTile && TileID.Sets.Ore[tile.TileType])
                 tile.ResetToType(TileID.LunarOre);
         }
     }

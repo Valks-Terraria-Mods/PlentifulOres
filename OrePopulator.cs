@@ -59,7 +59,7 @@ public class HardmodeOresPass : GenPass
     {
         foreach (var ore in ores)
             for (int n = 0; n < ore.Amount; n++)
-                Utils.GenerateTile(ore.Tile);
+                Utils.GenerateHardmodeTile(ore.Tile);
     }
 }
 
