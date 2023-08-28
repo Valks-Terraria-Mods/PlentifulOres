@@ -181,5 +181,15 @@ Configs: {
 			Label: Titanium Bias
 			Tooltip: ""
 		}
+
+		FastChlorophyte: {
+			Label: Fast Chlorophyte
+			Tooltip: ""
+		}
+
+		KillingMoonLordSpawnsLuminiteOre: {
+			Label: Killing Moon Lord Spawns Luminite Ore
+			Tooltip: ""
+		}
 	}
 }

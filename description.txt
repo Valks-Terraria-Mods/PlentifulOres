@@ -6,7 +6,10 @@ All vanilla pre-hardmode ores and gems
 
 Killing the Wall of Flesh will now spawn a ton of hardmode ores everywhere. The hardmode ores will always be cobalt, mythril and titanium.
 
+Killing the Moon Lord will spawn bits of luminite ore spread across the underground.
+
 [h1]Config Explained[/h1]
+- Killing Moon Lord Spawns Luminite Ore (spawns small bits of luminite everywhere after killing moonlord)
 - Fast Chlorophyte (chlorophyte will spread 8x the normal rate)
 - Near Surface (ores will spawn near surface)
 - Not Only Replace But Add (ores will be placed in empty tiles)
@@ -17,6 +20,10 @@ Killing the Wall of Flesh will now spawn a ton of hardmode ores everywhere. The 
 - Additional Strength (increases the size of ore clusters)
 - Additional Steps (like strength but different!)
 - All Ore and Gem Bias (changes how much a particular ore or gem spawns)
+
+[h1]FAQ[/h1]
+Q: How do I disable the additional generation this mod adds for a specific ore?
+A: Set the config bias for that ore to zero.
 
 [h1]Links[/h1]
 Suggestions and Feedback: https://discord.gg/866cg8yfxZ 
