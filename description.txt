@@ -7,6 +7,7 @@ All vanilla pre-hardmode ores and gems
 Killing the Wall of Flesh will now spawn a ton of hardmode ores everywhere. The hardmode ores will always be cobalt, mythril and titanium.
 
 [h1]Config Explained[/h1]
+- Fast Chlorophyte (chlorophyte will spread 8x the normal rate)
 - Near Surface (ores will spawn near surface)
 - Not Only Replace But Add (ores will be placed in empty tiles)
 - No Y Change (have not tested but here for you to experiment)
