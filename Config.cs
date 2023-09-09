@@ -11,7 +11,7 @@ public class Config : ModConfig
     [DefaultValue(true)]
     public bool KillingMoonLordSpawnsLuminiteOre;
 
-    [DefaultValue(true)]
+    [DefaultValue(false)]
     public bool FastChlorophyte;
 
     [DefaultValue(false)]
