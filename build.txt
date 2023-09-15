@@ -1,4 +1,4 @@
 author = valkyrienyanko
-version = 6.0.12
+version = 6.0.13
 displayName = Plentiful Ores
 homepage = https://discord.gg/866cg8yfxZ

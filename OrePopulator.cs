@@ -68,19 +68,19 @@ public class PrehardmodeOresPass : GenPass
     readonly List<OreInfo> ores = new()
     {
         { new OreInfo(
-            tile: GenVars.copperBar > 0 ? TileID.Copper : TileID.Tin,
+            tile: GenVars.copperBar,
             amount: PlentifulOres.Config.CopperBias) },
 
         { new OreInfo(
-            tile: GenVars.silverBar > 0 ? TileID.Silver : TileID.Tungsten,
+            tile: GenVars.silverBar,
             amount: PlentifulOres.Config.SilverBias ) },
 
         { new OreInfo(
-            tile: GenVars.ironBar > 0 ? TileID.Iron : TileID.Lead,
+            tile: GenVars.ironBar,
             amount: PlentifulOres.Config.IronBias) },
 
         { new OreInfo(
-            tile: GenVars.goldBar > 0 ? TileID.Gold : TileID.Platinum,
+            tile: GenVars.goldBar,
             amount: PlentifulOres.Config.GoldBias) },
 
         { new OreInfo(
@@ -131,10 +131,10 @@ public class PrehardmodeOresPass : GenPass
 
 public struct OreInfo
 {
-    public ushort Tile { get; set; }
+    public int Tile { get; set; }
     public int Amount { get; set; }
 
-    public OreInfo(ushort tile, int amount = 1)
+    public OreInfo(int tile, int amount = 1)
     {
         Tile = tile;
         Amount = amount;

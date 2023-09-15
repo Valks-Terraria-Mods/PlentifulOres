@@ -2,7 +2,7 @@
 
 public static class Utils
 {
-    public static void GenerateTile(ushort id)
+    public static void GenerateTile(int id)
     {
         Config config = PlentifulOres.Config;
 
@@ -27,7 +27,7 @@ public static class Utils
             overRide: config.Override_OnlyChangeIfYouKnowWhatYouAreDoing);
     }
 
-    public static void GenerateHardmodeTile(ushort id)
+    public static void GenerateHardmodeTile(int id)
     {
         Config config = PlentifulOres.Config;
 
