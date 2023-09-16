@@ -1,4 +1,6 @@
-﻿namespace PlentifulOres;
+﻿using System;
+
+namespace PlentifulOres;
 
 public static class Utils
 {
@@ -16,15 +18,23 @@ public static class Utils
         int additionalStr = config.AdditionalStrength;
         int additionalSteps = config.AdditionalSteps;
 
-        WorldGen.TileRunner(x, y,
-            strength: WorldGen.genRand.Next(10 + additionalStr, 15 + additionalStr),
-            steps: WorldGen.genRand.Next(3 + additionalSteps, 6 + additionalSteps),
-            type: id,
-            addTile: config.NotOnlyReplaceButAdd,
-            speedX: config.SpeedX,
-            speedY: config.SpeedY,
-            noYChange: config.NoYChange,
-            overRide: config.Override_OnlyChangeIfYouKnowWhatYouAreDoing);
+        try
+        {
+            WorldGen.TileRunner(x, y,
+                strength: WorldGen.genRand.Next(10 + additionalStr, 15 + additionalStr),
+                steps: WorldGen.genRand.Next(3 + additionalSteps, 6 + additionalSteps),
+                type: id,
+                addTile: config.NotOnlyReplaceButAdd,
+                speedX: config.SpeedX,
+                speedY: config.SpeedY,
+                noYChange: config.NoYChange,
+                overRide: config.Override_OnlyChangeIfYouKnowWhatYouAreDoing);
+        } catch (IndexOutOfRangeException)
+        {
+            // This will be thrown if the mod is loaded alongside
+            // the OreExcavator mod. This happens on world generation.
+        }
+        
     }
 
     public static void GenerateHardmodeTile(int id)
