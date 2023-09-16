@@ -68,19 +68,19 @@ public class PrehardmodeOresPass : GenPass
     readonly List<OreInfo> ores = new()
     {
         { new OreInfo(
-            tile: GenVars.copperBar,
+            tile: GenVars.copper,
             amount: PlentifulOres.Config.CopperBias) },
 
         { new OreInfo(
-            tile: GenVars.silverBar,
+            tile: GenVars.silver,
             amount: PlentifulOres.Config.SilverBias ) },
 
         { new OreInfo(
-            tile: GenVars.ironBar,
+            tile: GenVars.iron,
             amount: PlentifulOres.Config.IronBias) },
 
         { new OreInfo(
-            tile: GenVars.goldBar,
+            tile: GenVars.gold,
             amount: PlentifulOres.Config.GoldBias) },
 
         { new OreInfo(

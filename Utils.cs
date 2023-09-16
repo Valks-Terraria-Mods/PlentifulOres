@@ -34,7 +34,6 @@ public static class Utils
             // This will be thrown if the mod is loaded alongside
             // the OreExcavator mod. This happens on world generation.
         }
-        
     }
 
     public static void GenerateHardmodeTile(int id)
