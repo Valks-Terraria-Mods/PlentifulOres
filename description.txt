@@ -26,6 +26,6 @@ Q: How do I disable the additional generation this mod adds for a specific ore?
 A: Set the config bias for that ore to zero.
 
 [h1]Links[/h1]
-Suggestions and Feedback: https://discord.gg/866cg8yfxZ 
+Suggestions and Feedback: https://discord.gg/j8HQZZ76r8
 Source Code: https://github.com/Valks-Terraria-Mods/PlentifulOres
 My Other Mods: https://steamcommunity.com/sharedfiles/filedetails/?id=3025618564

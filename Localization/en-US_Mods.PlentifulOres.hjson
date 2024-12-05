@@ -4,192 +4,192 @@ Configs: {
 
 		Copper: {
 			Label: Copper
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Silver: {
 			Label: Silver
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Iron: {
 			Label: Iron
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Gold: {
 			Label: Gold
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Crimtane: {
 			Label: Crimtane
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Diamond: {
 			Label: Diamond
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Ruby: {
 			Label: Ruby
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Emerald: {
 			Label: Emerald
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Sapphire: {
 			Label: Sapphire
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Topaz: {
 			Label: Topaz
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Amethyst: {
 			Label: Amethyst
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		AddOresAndGemsNearSurface: {
 			Label: Add Ores And Gems Near Surface
-			Tooltip: ""
+			Tooltip: Ores and gems can spawn closer to the surface
 		}
 
 		AdditionalGlobalOreAndGemStrength: {
 			Label: Additional Global Ore And Gem Strength
-			Tooltip: ""
+			Tooltip: Increases the size of ore clusters
 		}
 
 		AdditionalGlobalOreAndGemSteps: {
 			Label: Additional Global Ore And Gem Steps
-			Tooltip: ""
+			Tooltip: Increases the frequency of ore clusters
 		}
 
 		CopperBias: {
 			Label: Copper Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		SilverBias: {
 			Label: Silver Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		IronBias: {
 			Label: Iron Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		GoldBias: {
 			Label: Gold Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		CrimtaneBias: {
 			Label: Crimtane Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		DiamondBias: {
 			Label: Diamond Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		RubyBias: {
 			Label: Ruby Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		EmeraldBias: {
 			Label: Emerald Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		SapphireBias: {
 			Label: Sapphire Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		TopazBias: {
 			Label: Topaz Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		AmethystBias: {
 			Label: Amethyst Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens before world creation)
 		}
 
 		Override_OnlyChangeIfYouKnowWhatYouAreDoing: {
-			Tooltip: ""
+			Tooltip: No idea what this does. Probably better to just not touch it.
 			Label: Override_ Only Change If You Know What You Are Doing
 		}
 
 		NoYChange: {
-			Tooltip: ""
+			Tooltip: No idea what this does but here for you to experiment.
 			Label: No Y Change
 		}
 
 		NotOnlyReplaceButAdd: {
-			Tooltip: ""
+			Tooltip: Ores will be placed in empty tiles.
 			Label: Not Only Replace But Add
 		}
 
 		NearSurface: {
-			Tooltip: ""
+			Tooltip: Ores and gems can spawn closer to the surface
 			Label: Near Surface
 		}
 
 		SpeedX: {
 			Label: Speed X
-			Tooltip: ""
+			Tooltip: No idea what this does but here for you to experiment.
 		}
 
 		SpeedY: {
 			Label: Speed Y
-			Tooltip: ""
+			Tooltip: No idea what this does but here for you to experiment.
 		}
 
 		AdditionalStrength: {
 			Label: Additional Strength
-			Tooltip: ""
+			Tooltip: Increases the size of ore clusters
 		}
 
 		AdditionalSteps: {
 			Label: Additional Steps
-			Tooltip: ""
+			Tooltip: Increases the frequency of ore clusters
 		}
 
 		CobaltBias: {
 			Label: Cobalt Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens when defeating WOF for first time)
 		}
 
 		MythrilBias: {
 			Label: Mythril Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens when defeating WOF for first time)
 		}
 
 		TitaniumBias: {
 			Label: Titanium Bias
-			Tooltip: ""
+			Tooltip: How frequent should this generate? (Generation only happens when defeating WOF for first time)
 		}
 
 		FastChlorophyte: {
 			Label: Fast Chlorophyte
-			Tooltip: ""
+			Tooltip: WARNING: This is really FAST. I'm not joking lol. This is like meme fast.
 		}
 
 		KillingMoonLordSpawnsLuminiteOre: {
 			Label: Killing Moon Lord Spawns Luminite Ore
-			Tooltip: ""
+			Tooltip: Small bits of Luminite Ore will spawn everywhere after killing the moonlord
 		}
 	}
 }

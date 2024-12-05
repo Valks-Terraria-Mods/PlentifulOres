@@ -27,12 +27,10 @@ public class Config : ModConfig
     public bool Override_OnlyChangeIfYouKnowWhatYouAreDoing;
 
     [DefaultValue(0)]
-    [Range(0, 10000)]
-    public float SpeedX;
+    public int SpeedX;
 
     [DefaultValue(0)]
-    [Range(0, 10000)]
-    public float SpeedY;
+    public int SpeedY;
 
     [DefaultValue(0)]
     [Range(0, 30)]
