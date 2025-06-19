@@ -41,7 +41,7 @@ public class Config : ModConfig
     public int AdditionalSteps;
 
     // Ores
-    [DefaultValue(3)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int CopperBias;
 
