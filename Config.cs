@@ -8,7 +8,7 @@ public class Config : ModConfig
 {
     public override ConfigScope Mode => ConfigScope.ServerSide;
 
-    [DefaultValue(true)]
+    [DefaultValue(false)]
     public bool KillingMoonLordSpawnsLuminiteOre;
 
     [DefaultValue(false)]
@@ -45,56 +45,56 @@ public class Config : ModConfig
     [Range(0, 100)]
     public int CopperBias;
 
-    [DefaultValue(10)]
+    [DefaultValue(1)]
     [Range(0, 100)]
     public int SilverBias;
 
-    [DefaultValue(15)]
+    [DefaultValue(1)]
     [Range(0, 100)]
     public int IronBias;
 
-    [DefaultValue(20)]
+    [DefaultValue(1)]
     [Range(0, 100)]
     public int GoldBias;
 
-    [DefaultValue(3)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int CrimtaneBias;
 
-    [DefaultValue(15)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int CobaltBias;
 
-    [DefaultValue(15)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int MythrilBias;
 
-    [DefaultValue(15)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int TitaniumBias;
 
     // Gems
-    [DefaultValue(3)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int DiamondBias;
 
-    [DefaultValue(3)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int RubyBias;
 
-    [DefaultValue(3)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int EmeraldBias;
 
-    [DefaultValue(3)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int SapphireBias;
 
-    [DefaultValue(3)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int TopazBias;
 
-    [DefaultValue(3)]
+    [DefaultValue(0)]
     [Range(0, 100)]
     public int AmethystBias;
 

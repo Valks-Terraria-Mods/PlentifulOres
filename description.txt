@@ -22,8 +22,14 @@ Killing the Moon Lord will spawn bits of luminite ore spread across the undergro
 - All Ore and Gem Bias (changes how much a particular ore or gem spawns)
 
 [h1]FAQ[/h1]
+Q: Does not seem like any additional ores are spawning?
+A: The default values have been set to be intentionally super low or disabled (set to 0) for immersion, increase them, and you will see more ores.
+
 Q: How do I disable the additional generation this mod adds for a specific ore?
 A: Set the config bias for that ore to zero.
+
+Q: I have increased ore spawns mid-playthrough and there are still the same amount of ores?
+A: Pre-hardmode ore generation is only triggered on world creation.
 
 [h1]Links[/h1]
 Suggestions and Feedback: https://discord.gg/j8HQZZ76r8
